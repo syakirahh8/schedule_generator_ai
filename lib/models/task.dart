@@ -5,4 +5,9 @@ class Task {
   final String deadline;
 
   Task({required this.name, required this.priority, required this.duration, required this.deadline});
+
+  @override
+  String toString() {
+    return 'Task{name: $name, priority: $priority, duration: $duration, deadline: $deadline}';
+  }
 }
